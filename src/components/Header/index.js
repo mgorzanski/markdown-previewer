@@ -1,12 +1,9 @@
 import React from 'react';
-import './index.css';
-import HyperLink from 'react-uwp/HyperLink';
 import CommandBar from 'react-uwp/CommandBar';
 import AppBarButton from 'react-uwp/AppBarButton';
 import AppBarSeparator from 'react-uwp/AppBarSeparator';
 
 const headerStyles = {
-    
 };
 
 export default class Header extends React.Component {
@@ -19,16 +16,13 @@ export default class Header extends React.Component {
             <p>Unindent</p>,
             <p>Comment</p>,
             <p>Block quote</p>,
+            <AppBarSeparator />,
             <p>Increase font size</p>,
             <p>Decrease font size</p>
         ];
 
         return (
             <header className="header">
-                {/* <HyperLink style={{ margin: "0 10px 0 10px" }} href="#">File</HyperLink>
-                <HyperLink style={{ margin: "0 10px 0 10px" }} href="#">Edit</HyperLink>
-                <HyperLink style={{ margin: "0 10px 0 10px" }} href="#">Format</HyperLink>
-                <HyperLink style={{ margin: "0 10px 0 10px" }} href="#">View</HyperLink> */}
                 <CommandBar
                     labelPosition="right"
                     primaryCommands={[
